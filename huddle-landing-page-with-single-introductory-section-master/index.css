@@ -11,6 +11,13 @@ body{
 }
 .container{
     display: flex;
+    flex-direction: column;
+}
+.middle{
+    display: flex;
+}
+.social{
+    display: flex;
 }
 .attribution{
     font-size: 11px; text-align: center;
