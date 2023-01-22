@@ -85,6 +85,7 @@ button{
 }
 #card1{
     background-color: hsl(31, 77%, 52%);
+    border-radius: 15px 0 0 15px;
 
 }
 #card2{
@@ -93,6 +94,7 @@ button{
 }
 #card3{
     background-color: hsl(179, 100%, 13%);
+    border-radius: 0 15px 15px 0;
 
 }
 .attribution{
@@ -101,7 +103,7 @@ button{
 .attribution a{
     color: hsl(228, 45%, 44%);
 }
-@media screen and (min-width: 375px) and (max-width: 440px) {
+@media screen and (min-width: 220px) and (max-width: 775px) {
     *{
         box-sizing: border-box;
         margin: 0;
@@ -118,11 +120,13 @@ button{
         flex: 1 1 auto;
     }
     .cards{
+        height: 750px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     .card{
+        max-width: 375px;
         padding: 25px;
         display: flex;
         flex-direction: column;
@@ -132,7 +136,6 @@ button{
     .titre{
         display: flex;
         flex-direction: column;
-        justify-content: first baseline;
         align-items: center;
     }
     .titre>img{
@@ -147,6 +150,8 @@ button{
         font-family: 'Lexend Deca', sans-serif;
         font-weight: 400;
         color: hsla(0, 0%, 100%, 0.75);
+        line-height: 1.5em;
+        margin-bottom: 12px;
     }
     button{
         font-family: 'Lexend Deca', sans-serif;
@@ -187,6 +192,7 @@ button{
     }
     #card1{
         background-color: hsl(31, 77%, 52%);
+        border-radius: 15px 15px 0 0;
     
     }
     #card2{
@@ -195,6 +201,7 @@ button{
     }
     #card3{
         background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 15px 15px;
     
     }
     .attribution{
