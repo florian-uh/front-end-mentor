@@ -15,7 +15,6 @@ body{
 }
 header{
     height: 100px;
-    margin: 0 135px 0 135px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,31 +40,31 @@ button{
     border-radius: 24px;
     background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     color: hsl(0, 0%, 100%);
+    font-weight: 700;
 }
 button:hover{
-    opacity: 0.8;
+    opacity: 0.5;
 }
-.top-page{
+.texte{
+    font-weight: 400;
+    color: hsl(233, 8%, 62%);
+}
+.top{
     height: 730px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 .top-left{
-    margin-left: 135px;
-    display: flex;
-    flex-direction: column;
     height: 550px;
     width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .top-left>h1{
     font-size: 50px;
     font-weight: 700;
-}
-.top-left>p{
-    font-weight: 400;
-    color: hsl(233, 8%, 62%);
 }
 .top-right{
     background-image: url(./images/bg-intro-desktop.svg);
@@ -81,82 +80,81 @@ button:hover{
     height: 700px;
     background-color: hsl(0, 0%, 98%);
 }
-.top-info{
+.info-bank{
     height: 200px;
     width: 650px;
-    margin-left: 135px;
 }
-.top-info>h2{
+.info-bank>h2{
     font-size: 40px;
     font-weight: 300;
 }
-.top-info>p{
-    font-weight: 400;
-    color: hsl(233, 8%, 62%);
-}
 .info-box{
     height: 350px;
-    margin: 0 135px 0 135px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-.in-box{
+.box-bank{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-
 }
-.in-box>h3{
+.box-bank>h3{
     font-weight: 300;
 }
 .bottom{
     height: 650px;
-    margin: 0 135px 0 135px;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-}
-.container>img{
-    width: 250px;
-    height: 250px;
 }
 .art1{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container>img{
+    height: 250px;
+    width: 250px;
+}
 footer{
-    height: 150px;
+    height: 120px;
     background-color: hsl(233, 26%, 24%);
     display: flex;
     justify-content: space-around;
 }
-.left-foot{
+.foot-left{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-.sociaux-list{
+.foot-left>img{
+    background-color: hsl(0, 0%, 100%);
+}
+.left-list{
     display: flex;
     list-style-type: none;
 }
-.sociaux-link>a{
+.left-link>a{
     padding: 5px;
-}
-.foot-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style-type: none;
-}
-.foot-link>a{
     text-decoration: none;
     font-weight: 400;
     color: hsl(0, 0%, 100%);
 }
-.right-foot{
+
+.foot-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.foot-link>a{
+    list-style-type: none;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+}
+.foot-right{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -167,4 +165,8 @@ footer{
 }
 .attribution a{
     color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width:375px) and (max-width:600px) {
+    
+    
 }
