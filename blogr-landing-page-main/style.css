@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+/*
+font-family: 'Overpass', sans-serif; 300 600
+font-family: 'Ubuntu', sans-serif; 400 500 700
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 500px;
+    background-color: hsl(356, 100%, 66%);
+    background-image: url(./images/bg-pattern-intro-desktop.svg);
+    background-position: top -1375px right -1350px;
+    background-repeat: no-repeat;
+    /*background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));*/
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    
+}
+.top-head{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav{
+    width: 50%;
+    position: sticky;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+}
+nav a:hover{
+    color: hsl(208, 49%, 24%);
+    border-bottom-color: hsl(208, 49%, 24%);
+    border-radius: 5px;
+}
+.sous{
+    display: none;
+    box-shadow: 0 1px 2px #CCC;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav>ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: hsl(0, 0%, 100%);
+}
+.deroulant>a::after{
+    content: "";
+    font-size: 12px;
+}
+.top-btn{
+    display: flex;
+}
+.top-btn>button{
+    margin: 15px;
+}
+.login{
+    border: none;
+    background: none;
+    color: hsl(208, 49%, 24%);
+}
+.login:hover{
+    opacity: 0.5;
+}
+.signup{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+}
+.signup:hover{
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+}
+.bottom-head{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bottom-head>h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+.bottom-head>p{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+}
+.bottom-btn>button{
+    width: 150px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.start{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+}
+.learn{
+    background-color: hsl(356, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+}
+.start:hover{
+    background-color: hsl(356, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+}
+.learn:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+}
+.designed{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.designed>h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: hsl(208, 49%, 24%);
+}
+.block-designed{
+    display: flex;
+    justify-content: space-evenly;
+}
+.designed-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.designed-block>h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: hsl(208, 49%, 24%);
+}
+.designed-block>p{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    color: hsl(207, 13%, 34%);
+    line-height: 1.55em;
+}
+.designed-right{
+    width: 50%;
+}
+.designed-right>img{
+    object-position: left 135px top 5px;
+    display: block;
+    width: 100%;
+}
+.state{
+    display: flex;
+    align-items: center;
+}
+.state-left>img{
+    display: block;
+    width: 100%;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+}
+.bottom-left>img{
+    display: block;
+    width: 100%;
+}
+.bottom-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot-list{
+    list-style-type: none;
+}
+.foot-list>li>a{
+    text-decoration: none;
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
