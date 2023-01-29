@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/*
+font-family: 'Karla', sans-serif;
+400 700
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.block{
+    width: 750px;
+    height: 450px;
+    box-shadow: 0 0 25px 2px #CCC;
+    
+}
+.top{
+    padding-left: 20px;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.titre{
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+}
+.sous-titre{
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+}
+.texte{
+    width: 550px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(218, 22%, 67%);
+}
+.left{
+    width: 375px;
+    padding-left: 20px;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 15px;
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.left>h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(204, 43%, 93%);
+}
+.gros{
+    font-size: 36px;
+    color: hsl(204, 43%, 93%);
+}
+button{
+    padding: 15px;
+    width: 60%;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+}
+button:hover{
+    opacity: 0.8;
+}
+.right{
+    width: 375px;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 15px 0;
+    opacity: 0.7;
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.right>h2{
+    font-weight: 700;
+}
+ul{
+    list-style-type: none;
+}
+#card{
+    border-radius: 15px;
+    display: grid;
+    grid-template-areas: "top top"
+                        "left right";
+}
+#haut{
+    grid-area: top;
+}
+#gauche{
+    grid-area: left;
+}
+#droite{
+    grid-area: right;
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
